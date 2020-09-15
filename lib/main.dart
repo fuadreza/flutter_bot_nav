@@ -1,5 +1,7 @@
 import 'package:fancy_bottom_navigation/fancy_bottom_navigation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bot_nav/circular_bottom_nav/circular_bottom_nav.dart';
+import 'package:flutter_bot_nav/circular_bottom_nav/circular_home.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,7 +17,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Fancy Tab Bar'),
+      home: CircularHome(),
     );
   }
 }
@@ -100,7 +102,6 @@ class _MyHomePageState extends State<MyHomePage> {
                   .primaryColor,
               onPressed: () {},
             ),
-
           ],
         );
       case 1:
